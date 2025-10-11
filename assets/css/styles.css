@@ -453,6 +453,7 @@ img {
 /*=============== PROJECTS ===============*/
 .projects {
   padding-block: 2rem 1rem;
+  background-color: white;
 }
 .projects__section__title {
   text-align: initial;
@@ -546,6 +547,13 @@ img {
   opacity: 1;
   pointer-events: initial;
 }
+
+/* Swiper class */
+.projects__swiper {
+  margin-inline: initial;
+  padding-bottom: 2rem;
+}
+
 /*=============== CONTACT ===============*/
 
 /*=============== BREAKPOINTS ===============*/

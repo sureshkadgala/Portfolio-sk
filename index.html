@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!--==================== REMIXICONS   ====================-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
@@ -11,6 +12,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!--==================== SWIPER CSS   ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="assets/css/styles.css" />
     <title>PORTFOLIO</title>
@@ -90,7 +94,9 @@
           ></a>
         </div>
       </section>
+
       <!--==================== ABOUT ====================-->
+
       <section class="about section" id="about">
         <h2 class="section__title">ABOUT ME</h2>
         <div class="about__container container grid">
@@ -139,16 +145,18 @@
           </div>
         </div>
       </section>
+
       <!--==================== PROJECTS ====================-->
+
       <section class="projects section" id="projects">
         <h2 class="projects__section__title">
           I Make Incredible <br />
           <span>Projects</span>
         </h2>
         <div class="home__container container grid">
-          <div class="project__swiper">
-            <div>
-              <article class="projects__card">
+          <div class="projects__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="projects__card swiper-slide">
                 <div class="blob"></div>
                 <div class="projects__number">
                   <h1>01</h1>
@@ -175,9 +183,9 @@
                 </div>
               </article>
 
-              <article class="projects__card">
+              <article class="projects__card swiper-slide">
                 <div class="projects__number">
-                  <h1>01</h1>
+                  <h1>02</h1>
                   <h3>Web</h3>
                 </div>
 
@@ -201,9 +209,9 @@
                 </div>
               </article>
 
-              <article class="projects__card">
+              <article class="projects__card swiper-slide">
                 <div class="projects__number">
-                  <h1>01</h1>
+                  <h1>03</h1>
                   <h3>Web</h3>
                 </div>
 
@@ -227,9 +235,9 @@
                 </div>
               </article>
 
-              <article class="projects__card">
+              <article class="projects__card swiper-slide">
                 <div class="projects__number">
-                  <h1>01</h1>
+                  <h1>04</h1>
                   <h3>Web</h3>
                 </div>
 
@@ -253,15 +261,25 @@
                 </div>
               </article>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
       <!--==================== CONTACT ====================-->
+
       <section class="contact section" id="contact">
         <div class="contact__container container grid"></div>
       </section>
     </main>
     <!--==================== FOOTER ====================-->
+    <footer class="footer grid"></footer>
+
+    <!--==================== SWIPER JS ====================-->
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+
     <script src="assets/js/main.js"></script>
   </body>
 </html>

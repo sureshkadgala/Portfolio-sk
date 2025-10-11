@@ -16,3 +16,17 @@ if (navClose) {
     navMenu.classList.remove("show-menu");
   });
 }
+
+/*=============== SWIPER PROJECTS ===============*/
+const swipeProjects = new Swiper(".projects__swiper", {
+  loop: true,
+  spaceBetween: 24,
+  slidesPerView: "auto",
+  grabCursor: true,
+  speed: 600,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
