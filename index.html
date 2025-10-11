@@ -36,11 +36,15 @@
           </ul>
 
           <!-- close -->
-          <div class="nav__close" id="nav-close">X</div>
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-large-line"></i>
+          </div>
         </div>
 
         <!-- toggle -->
-        <div class="nav__toggle" id="nav-toggle">+</div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-apps-line"></i>
+        </div>
       </nav>
     </header>
     <!--==================== MAIN ====================-->
@@ -82,11 +86,8 @@
               ><i class="ri-github-line"></i
             ></a>
             <a href="#" target="_blank" class="home__social-link"
-              ><i class="ri-github-line"></i
+              ><i class="ri-instagram-line"></i
             ></a>
-            <a href="#" target="_blank" class="home__social-link"
-              ><i class="ri-github-line"></i>
-            </a>
           </div>
 
           <a href="#" target="_blank" target="_blank" class="home__cv"
@@ -119,22 +120,18 @@
             <h2 class="section__subtitle">Skills</h2>
             <div class="about__images">
               <img
-                src="assets/images/html-logo.svg"
+                src="assets/images/HTML5.svg"
                 alt="img"
                 class="about__html"
               />
+              <img src="assets/images/CSS3.svg" alt="img" class="about__css" />
               <img
-                src="assets/images/css-logo.svg"
-                alt="img"
-                class="about__css"
-              />
-              <img
-                src="assets/images/javascript-logo.svg"
+                src="assets/images/JavaScript.svg"
                 alt="img"
                 class="about__js"
               />
               <img
-                src="assets/images/javascript-logo.svg"
+                src="assets/images/React.svg"
                 alt="img"
                 class="about__react"
               />
@@ -149,11 +146,15 @@
       <!--==================== PROJECTS ====================-->
 
       <section class="projects section" id="projects">
-        <h2 class="projects__section__title">
+        <!-- <h2 class="section__title">
           I Make Incredible <br />
           <span>Projects</span>
-        </h2>
-        <div class="home__container container grid">
+        </h2> -->
+        <h2 class="section__title">PROJECTS</h2>
+        <div class="projects__container container grid">
+          <!-- <h2 class="section__subtitle" style="color: red">
+            Get to know more!
+          </h2> -->
           <div class="projects__swiper swiper">
             <div class="swiper-wrapper">
               <article class="projects__card swiper-slide">
@@ -268,11 +269,73 @@
       <!--==================== CONTACT ====================-->
 
       <section class="contact section" id="contact">
-        <div class="contact__container container grid"></div>
+        <div class="contact__container container grid">
+          <h2 class="section__title">Contact Me</h2>
+          <p>
+            I'd love to hear from you! Feel free to reach out using the form
+            below or via my contact details.
+          </p>
+          <div class="contact-container">
+            <div class="contact-info">
+              <h3 class="section__subtitle">Get in Touch</h3>
+              <p><i class="ri-mail-line"></i>sureshkadagala110@gmail.com</p>
+              <p><i class="ri-phone-line"></i> +91 76749 27795</p>
+              <p><i class="ri-map-pin-line"></i>Hyderabad, Telangana, India</p>
+            </div>
+
+            <form class="contact-form" action="##" method="POST">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
     <!--==================== FOOTER ====================-->
-    <footer class="footer grid"></footer>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__logo">
+          <h3>Suresh Kadagala</h3>
+          <p>
+            Front-End Developer | Building responsive & interactive web apps
+          </p>
+        </div>
+
+        <div class="footer__links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__socials">
+          <h3>Follow Me</h3>
+          <div class="social-icons">
+            <a href="#" target="_blank"><i class="ri-github-line"></i></a>
+            <a href="#" target="_blank"><i class="ri-linkedin-box-line"></i></a>
+            <a href="#" target="_blank"><i class="ri-instagram-line"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2025 Suresh Kadagala | All Rights Reserved.</p>
+      </div>
+    </footer>
 
     <!--==================== SWIPER JS ====================-->
 
