@@ -27,6 +27,17 @@ const linkAction = () => {
 };
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
+/*=============== ADD SHADOW HEADER ===============*/
+const shadowHeader = () => {
+  const header = document.getElementById("header");
+  //Add a class if the bottom offset is greater than 50 of the
+  // use window.scrollY (arrow functions don't have their own `this`)
+  window.scrollY >= 50
+    ? header.classList.add("shadow-header")
+    : header.classList.remove("shadow-header");
+};
+window.addEventListener("scroll", shadowHeader);
+
 /*=============== SWIPER PROJECTS ===============*/
 const swipeProjects = new Swiper(".projects__swiper", {
   loop: true,
@@ -45,3 +56,23 @@ const swipeProjects = new Swiper(".projects__swiper", {
     disableOnInteraction: false,
   },
 });
+/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+
+const sections = document.querySelectorAll("section[id]")
+
+const scrollActive = () => {
+  //we get the position by scrolling
+  const scrollY = window.scrollY;
+
+  sections.forEach((section) => {
+    const id = section.id, //id of each section
+      top = section.offsetTop - 50, // Distance from the top edge
+      height = section.offsetHeight, // Element height
+      // quote the attribute value to be safe in the selector
+      link = document.querySelector('.nav__menu a[href*=" + id + "]');
+
+    if (!link) return;
+    link.classList.toggle("active-link", scrollY > top && scrollY <= +height);
+  });
+};
+window.addEventListener("scroll", scrollActive);
