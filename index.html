@@ -25,8 +25,10 @@
       <div class="blob__animate"></div>
 
       <nav class="nav container grid">
-        <a href="#" class="nav__logo">PORTFOLIO</a>
-
+        <div class="mode-toggle">
+          <a href="#" class="nav__logo">PORTFOLIO</a>
+          <button id="theme-toggle">🌙</button>
+        </div>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li><a href="#home" class="nav__link">HOME</a></li>
@@ -43,7 +45,7 @@
 
         <!-- toggle -->
         <div class="nav__toggle" id="nav-toggle">
-          <i class="ri-apps-line"></i>
+          <!-- <i class="ri-apps-line"></i> --><i class="ri-menu-line"></i>
         </div>
       </nav>
     </header>
@@ -51,7 +53,7 @@
     <main class="main">
       <!--==================== HOME ====================-->
       <section class="home section" id="home">
-        <div class="home__shadow"></div>
+        <!-- <div class="home__shadow"></div> -->
 
         <div class="home__container container grid">
           <div class="home__data">
@@ -63,13 +65,9 @@
           </div>
 
           <div class="home__image">
-            <div class="blob-animate"></div>
-            <img
-              src="assets/images/profile-removebg-preview.png"
-              alt="img"
-              class="home__profile"
-            />
-            <div class="home__shadow"></div>
+            <!-- <div class="blob-animate"></div> -->
+            <img src="assets/images/SK.png" alt="img" class="home__profile" />
+            <!-- <div class="home__shadow"></div> -->
           </div>
 
           <div class="home__info">
@@ -270,7 +268,7 @@
         <div class="contact__container container grid">
           <h2 class="section__title">Contact Me</h2>
           <h2 class="section__subtitle">Let's Connect and Collaborate</h2>
-          <p>
+          <p class="contact__description">
             I’d love to hear from you! Whether you have a project idea, a job
             opportunity, or just want to say hello, feel free to reach out. I’m
             always open to discussing new opportunities and creative
@@ -356,6 +354,9 @@
     <!--==================== SWIPER JS ====================-->
 
     <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== Light Mode JS ====================-->
+    <script src="assets/js/lightMode.js"></script>
 
     <!--==================== MAIN JS ====================-->
 
