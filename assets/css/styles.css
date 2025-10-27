@@ -387,7 +387,7 @@ body.light-mode #theme-toggle {
 .home__container {
   position: relative;
   row-gap: 3rem;
-  padding-block: 2rem 1rem;
+  padding-block: 4rem 1rem;
 }
 
 .home__greeting {
@@ -409,7 +409,7 @@ body.light-mode #theme-toggle {
 }
 
 .home__profile {
-  width: 250px;
+  width: 300px;
   justify-self: center;
 }
 
@@ -1055,7 +1055,7 @@ body.light-mode #theme-toggle {
   }
   .nav__list {
     flex-direction: row;
-    column-gap: 5.5rem;
+    column-gap: 4.3rem;
   }
 
   .nav__close,
@@ -1081,7 +1081,7 @@ body.light-mode #theme-toggle {
 
   .home__info {
     top: -27.4rem;
-    right: -27rem;
+    right: -23rem;
   }
 
   .home__split {
