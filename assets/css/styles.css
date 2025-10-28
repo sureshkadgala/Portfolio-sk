@@ -387,7 +387,7 @@ body.light-mode #theme-toggle {
 .home__container {
   position: relative;
   row-gap: 3rem;
-  padding-block: 4rem 1rem;
+  padding-block: 2rem 1rem;
 }
 
 .home__greeting {
@@ -399,7 +399,7 @@ body.light-mode #theme-toggle {
 .home__name {
   font-size: var(--biggest-font-size);
 }
-.home__image {
+.home__profile {
   position: relative;
   display: grid;
   justify-self: center;
@@ -408,8 +408,10 @@ body.light-mode #theme-toggle {
   width: 100%;
 }
 
-.home__profile {
-  width: 300px;
+.home__profile-container {
+  /* width: 300px; */
+  width: clamp(250px, 45vw, 450px);
+  /* height: 300px; */
   justify-self: center;
 }
 
@@ -420,18 +422,18 @@ body.light-mode #theme-toggle {
   justify-self: center;
 }
 
-.home__shadow,
+/* .home__shadow, */
 .home__social {
   position: absolute;
   width: 100%;
   height: 375px;
   bottom: 1rem;
   z-index: 1;
-  background-color: linear-gradient(
+  /* background-color: linear-gradient(
     180deg,
     hsla(240, 100%, 2%, 0) 60%,
     hsl(240, 100%, 2%) 85%
-  );
+  ); */
 }
 
 .home__info {
@@ -912,10 +914,9 @@ body.light-mode #theme-toggle {
     margin-inline: 1rem;
   }
 
-  .home__profile {
+  /* .home__profile {
     width: 220px;
-    /* height: 220px; */
-  }
+  } */
 
   .home__images {
     column-gap: 1rem;
@@ -956,6 +957,12 @@ body.light-mode #theme-toggle {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .home__social {
+    display: none;
+  }
+}
+
 /* For medium devices */
 @media screen and (min-width: 540px) {
   .nav__menu {
@@ -970,6 +977,7 @@ body.light-mode #theme-toggle {
   .home__cv i {
     font-size: 1.2rem;
   }
+
   .home__social-link {
     font-size: 1.4rem;
   }
@@ -1019,9 +1027,9 @@ body.light-mode #theme-toggle {
     width: 600px;
   }
 
-  .home__profile {
+  /* .home__profile {
     width: 270px;
-  }
+  } */
   .about__profile {
     display: block;
   }
@@ -1068,20 +1076,20 @@ body.light-mode #theme-toggle {
     padding-top: 2.3rem;
   }
 
-  .home__profile {
+  /* .home__profile {
     width: 450px;
-  }
+  } */
 
   .home__data {
     position: absolute;
     top: 12rem;
-    left: 3rem;
+    left: 2.5rem;
     z-index: 2;
   }
 
   .home__info {
     top: -27.4rem;
-    right: -23rem;
+    right: -23.5rem;
   }
 
   .home__split {
